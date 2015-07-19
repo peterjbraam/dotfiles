@@ -1,8 +1,7 @@
 set backup
 
 set nocompatible              " be iMproved, required
-
-" SEARCH preferences
+filetype off                  " required
 set ignorecase
 set smartcase
 set incsearch
