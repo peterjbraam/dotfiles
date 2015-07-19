@@ -1,0 +1,40 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/braam/programming/legion/" . "runtime/")
+ ("/Users/braam/programming/" . "legion/")
+ ("/Users/braam/" . "programming/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/braam/.emacs.d/"
+ "/Users/braam/programming/legion/examples/00_hello_world/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "init.el"
+ "Makefile"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/braam/programming/legion/runtime/" (21837 3889 0 0) "utilities.h" "shim_mapper.o" "shim_mapper.h" "shim_mapper.cc" "shared_lowlevel.o" "shared_lowlevel.cc" "runtime.o" "runtime.mk" "runtime.h" "runtime.cc" "region_tree.o" "region_tree.h" "region_tree.cc" "rectangle_set.h" "mapping_utilities.o" "mapping_utilities.h" "mapping_utilities.cc" "lowlevel_impl.h" "lowlevel_gpu.h" "lowlevel_gpu.cc" "lowlevel_dma.h" "lowlevel_dma.cc" "lowlevel_disk.cc" "lowlevel_config.h" "lowlevel.h" "lowlevel.cc" "legion_utilities.h" "legion_types.h" "legion_trace.o" "legion_trace.h" "legion_trace.cc" "legion_tasks.o" "legion_tasks.h" "legion_tasks.cc" "legion_spy.o" "legion_spy.h" "legion_spy.cc" "legion_profiling.h" "legion_ops.o" "legion_ops.h" "legion_ops.cc" "legion_logging.h" "legion_logging.cc" "legion_config.h" "legion_c_util.h" "legion_c.o" "legion_c.h" "legion_c.cc" "legion_allocation.h" "legion.o" "legion.h" "legion.cc" "interval_tree.h" "garbage_collection.o" "garbage_collection.h" "garbage_collection.cc" "field_tree.h" "default_mapper.o" "default_mapper.h" "default_mapper.cc" "common.h" "atomics.h" "arrays.h" "alt_mappers.h" "alt_mappers.cc" "activemsg.h" "activemsg.cc" "accessor.h" "../" "./")
+
+ ("/Users/braam/programming/legion/" (21837 3712 0 0) "tools/" "runtime/" "README.md" "LICENSE.txt" "language/" "examples/" "deprecated/" "bindings/" "apps/" ".travis.yml" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/braam/programming/" (21815 55993 0 0) "vivace-0.0.1.tgz" "vivace-0.0.1/" "swift/" "slurm/" "Romein-gridding/" "RC.wiki/" "RC-old/" "RC/" "python/" "PS Code/" "ps - 2010 PG related/" "parallel-architectures/" "oskar/" "MLNX_OFED_LINUX-2.3-1.0.1-ubuntu14.04-x86_64.tgz" "mdb-mdb-7aba5f5ab92a3fa92de001edb2c5ff4b04fd7d0d.tar.gz" "mdb/" "lustre-release-whamcloud/" "lustre-port-activity/" "lustre-dkms-2.6.0-1.el6.src.rpm" "lustre-client-2.6.0-2.6.32_431.20.3.el6.x86_64.src.rpm" "linux-git/" "linux-3.16.3.tar.xz" "linux-3.16.3/" "legion/" "learning/" "isa-l_open_src_2.10.tar.gz" "Instantly_Better_Vim_2013.tar.gz" "hogbom-haskell/" "haskell-exercises/" "halide_Darwin_32_pnacl_8a0d34f9c48695dacf5ff6a8c7e97aafd9d27b7b_2014_12_26.tgz" "halide/" "Gridding-0.2.tar.bz" "GASNet-1.22.4.tar.gz" "GASNet-1.22.4/" "fio/" "evernote-markdown/" "env2/" "env1/" "env 3.4/" "DNA/" "dataspaces-latest.tar.gz" "crocodile/" "cloud-haskell/" "ceph/" "casacore-1.7.0.tar.bz2" "ASKAPsoft/" "2100-closing-not-signed.pdf" ".DS_Store" "../" "./")
+
+ ("/Users/" (21570 31436 0 0) "Shared/" "Guest/" "braam/" ".localized" "../" "./")
+
+ ("/Users/braam/.emacs.d/" (21839 57433 0 0) "init.el~" "init.el" "auto-save-list/" ".#init.el" "#init.el#" "../" "./")
+
+ ("/Users/braam/" (21831 30152 0 0) "tmp/" "Public/" "programming/" "Pictures/" "opt/" "Music/" "Movies/" "Library/" "Google Drive/" "Dropbox (Personal)/" "Dropbox (Braam Companies)/" "Downloads/" "Documents/" "Desktop/" "Applications/" ".vimrc~" ".vimrc.backup" ".vimrc" ".viminfo" ".vim/" ".Trash/" ".subversion/" ".ssh/" ".shape-module.hs.swp" ".python_history" ".profile.pysave" ".profile" ".pip/" ".npm/" ".node-gyp/" ".matplotlib/" ".macports/" ".MacOSX/" ".lesshst" ".hgignore_global" ".gitignore_global" ".gitconfig" ".ghc/" ".folderize~" ".folderize" ".emacs.d/" ".DS_Store" ".dropbox/" ".distlib/" ".cups/" ".config/" ".CFUserTextEncoding" ".cabal/" ".bash_profile" ".bash_history" "../" "./")
+
+ ("/Users/braam/programming/legion/examples/00_hello_world/" (21837 25171 0 0) "Makefile" "hello_world.o" "hello_world.cc" "hello_world" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
