@@ -17,10 +17,12 @@
             (when (derived-mode-p 'c-mode 'c++-mode 'java-mode 'asm-mode)
               (ggtags-mode 1))))
 
-;  (setq mac-command-key-is-meta t)
-(add-to-list 'load-path "~/opt/emacs/haskell-mode/")
+
+(add-to-list 'load-path "~/.emacs.d/packages/haskell-mode/")
 (require 'haskell-mode-autoloads)
-(add-to-list 'Info-default-directory-list "~/opt/emacs/haskell-mode/")
+(add-to-list 'Info-default-directory-list "~/.emacs.d/packages/haskell-mode/")
+
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
