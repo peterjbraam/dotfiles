@@ -17,10 +17,7 @@
             (when (derived-mode-p 'c-mode 'c++-mode 'java-mode 'asm-mode)
               (ggtags-mode 1))))
 
-
-(add-to-list 'load-path "~/.emacs.d/packages/haskell-mode/")
-(require 'haskell-mode-autoloads)
-(add-to-list 'Info-default-directory-list "~/.emacs.d/packages/haskell-mode/")
+(add-hook 'haskell-mode-hook 'haskell-indentation-mode)
 
 ;; setup files ending in “.lg” to open in lua-mode
 (add-to-list 'auto-mode-alist '("\\.lg\\'" . lua-mode))
