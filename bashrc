@@ -114,3 +114,4 @@ fi
 # fi
 
 export LG_RT_DIR=$HOME/programming/legion/runtime
+eval "$(rbenv init -)"

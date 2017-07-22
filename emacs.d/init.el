@@ -1,28 +1,31 @@
+; use option as meta - not ideal, but better than <ESC>
 
-(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                         ("marmalade" . "https://marmalade-repo.org/packages/")
-                         ("melpa" . "http://melpa.org/packages/")))
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
 
-(global-set-key (kbd "C-x C-b") 'ibuffer)
-
-;;(when (memq window-system '(mac ns))
-;;  (exec-path-from-shell-initialize))
-
-(global-set-key (quote [M-down]) (quote scroll-up-line))
-(global-set-key (quote [M-up]) (quote scroll-down-line)) 
-
-
-(add-hook 'c-mode-common-hook
-          (lambda ()
-            (when (derived-mode-p 'c-mode 'c++-mode 'java-mode 'asm-mode)
-              (ggtags-mode 1))))
-
-(add-hook 'haskell-mode-hook 'haskell-indentation-mode)
-
-;; setup files ending in “.lg” to open in lua-mode
-(add-to-list 'auto-mode-alist '("\\.lg\\'" . lua-mode))
+(setq mac-option-key-is-meta nil
+      mac-command-key-is-meta t
+      mac-command-modifier 'none
+      mac-option-modifier 'meta)
 
 
+;;(set-face-foreground 'minibuffer-prompt "white")
+
+; paste from the clipboard
+(defun copy-from-osx ()
+(shell-command-to-string "pbpaste"))
+
+(defun paste-to-osx (text &optional push)
+(let ((process-connection-type nil))
+(let ((proc (start-process "pbcopy" "*Messages*" "pbcopy")))
+(process-send-string proc text)
+(process-send-eof proc))))
+
+(setq interprogram-cut-function 'paste-to-osx)
+(setq interprogram-paste-function 'copy-from-osx) 
 
 
 (custom-set-variables
@@ -30,17 +33,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ansi-color-names-vector ["#212526" "#ff4b4b" "#b4fa70" "#fce94f" "#729fcf" "#ad7fa8" "#8cc4ff" "#eeeeec"])
- '(column-number-mode t)
- '(custom-enabled-themes (quote (tsdh-dark)))
- '(inhibit-startup-screen t)
- '(show-paren-mode t)
- '(text-mode-hook (quote (turn-on-auto-fill text-mode-hook-identify)))
- '(tool-bar-mode nil)
- '(uniquify-buffer-name-style (quote forward) nil (uniquify)))
+ )
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Ubuntu Mono" :foundry "unknown" :slant normal :weight normal :height 113 :width normal)))))
+ '(default ((t (:inherit nil :stipple nil :background "White" :foreground "Black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 160 :width normal :foundry "nil" :family "Consolas")))))
