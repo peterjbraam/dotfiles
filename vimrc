@@ -1,15 +1,11 @@
 set backup
-
+set mouse=a
 set nocompatible              " be iMproved, required
 filetype on
 filetype off                  " required
 set ignorecase
 set smartcase
 set incsearch
-
-let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-let &t_SR = "\<Esc>]50;CursorShape=2\x7"
-let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
 set tags=./tags;/  "find tags in current or ancestor directory
 
@@ -74,6 +70,14 @@ Preparation: save last search, and cursor position.
 endfunction
 
 nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
+
+call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-unimpaired'
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+call plug#end()
+
+
 
 " VUNDLE 
 
