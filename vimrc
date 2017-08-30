@@ -1,6 +1,7 @@
 set backup
 
 set nocompatible              " be iMproved, required
+filetype on
 filetype off                  " required
 set ignorecase
 set smartcase
